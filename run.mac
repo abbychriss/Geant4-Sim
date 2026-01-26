@@ -1,0 +1,23 @@
+/run/initialize
+
+# --- Force Decay Physics ---
+# Essential for Am-241 to function
+/process/had/rdm/thresholdForVeryLongDecayTime 1.0e+60 year
+
+# --- Source: Am-241 Check Source ---
+/gps/particle ion
+/gps/ion 95 241 0 0 
+/gps/energy 0. eV
+
+# --- Position ---
+# Inside the bead we just created
+/gps/pos/type Point
+/gps/pos/centre 0. 0. -5.0 cm
+
+# --- Angular Distribution ---
+# Pure isotropic emission (standard for a check source)
+/gps/ang/type iso
+
+# --- Run ---
+/run/printProgress 1000
+/run/beamOn 1000000
