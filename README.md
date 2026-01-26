@@ -10,11 +10,11 @@ Parameters:
 
 To build/run:
 
-[0] Make sure you've sourced geant4.sh (or equivalent)
-[1] In the Am241_Sim directory: mkdir build; cd build
-[2] cmake ..
-[3] make -j4
-[4] ./Am241_Sim ../run.mac
+1. Make sure you've sourced geant4.sh (or equivalent)
+2. In the Am241_Sim directory: mkdir build; cd build
+3. cmake ..
+4. make -j4
+5. ./Am241_Sim ../run.mac
 
 In run.mac, you can change the number of decays to simulate: 
 /run/beamOn 100000
