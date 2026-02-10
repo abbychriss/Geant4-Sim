@@ -96,20 +96,20 @@ void CCDSensitiveDetector::EndOfEvent(G4HCofThisEvent*)
 
       // Fill CSV
       // Col 0: Event ID (So you can group pixels back into one "image")
-      analysisManager->FillNtupleIColumn(0, eventID);
+      analysisManager->FillNtupleIColumn(0, 0, eventID);
       
       // Col 1: Pixel X
-      analysisManager->FillNtupleIColumn(1, ix);
+      analysisManager->FillNtupleIColumn(0, 1, ix);
       
       // Col 2: Pixel Y
-      analysisManager->FillNtupleIColumn(2, iy);
+      analysisManager->FillNtupleIColumn(0, 2, iy);
       
       // Col 3: Energy (keV)
-      analysisManager->FillNtupleDColumn(3, energy / keV);
+      analysisManager->FillNtupleDColumn(0, 3, energy / keV);
       
       // Col 4: Charge (e-)
-      analysisManager->FillNtupleDColumn(4, measured_N);
+      analysisManager->FillNtupleDColumn(0, 4, measured_N);
 
-      analysisManager->AddNtupleRow();
+      analysisManager->AddNtupleRow(0);
   }
 }

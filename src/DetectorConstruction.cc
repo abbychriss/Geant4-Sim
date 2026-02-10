@@ -22,6 +22,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     G4NistManager* nist = G4NistManager::Instance();
     G4Material* mat_Si = nist->FindOrBuildMaterial("G4_Si");
     G4Material* mat_Al = nist->FindOrBuildMaterial("G4_Al");
+    G4Material* mat_Mylar = nist->FindOrBuildMaterial("G4_MYLAR");
     G4Material* mat_Vac = nist->FindOrBuildMaterial("G4_Galactic");
 
     // 1. World
@@ -43,19 +44,29 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
     // 3. Source Encapsulation (The "Bead") to stop Np-237 recoil and alphas
     // A 1mm radius plastic bead at the source position.
-    G4Material* mat_Acrylic = nist->FindOrBuildMaterial("G4_PLEXIGLASS");
-    G4Sphere* solidSource = new G4Sphere("SourceBead", 0, 1*mm, 0, 360*deg, 0, 180*deg);
-    G4LogicalVolume* logicSource = new G4LogicalVolume(solidSource, mat_Acrylic, "SourceBead");
+    // G4Material* mat_Acrylic = nist->FindOrBuildMaterial("G4_PLEXIGLASS");
+    // G4Sphere* solidSource = new G4Sphere("SourceBead", 0, 1*mm, 0, 360*deg, 0, 180*deg);
+    // G4LogicalVolume* logicSource = new G4LogicalVolume(solidSource, mat_Acrylic, "SourceBead");
 
-    //must be placed where the GPSource is
-    new G4PVPlacement(0, G4ThreeVector(0, 0, -5.0*cm), logicSource, "SourceBead", logicWorld, false, 0, true);
+    // must be placed where the GPSource is
+    // new G4PVPlacement(0, G4ThreeVector(0, 0, -5.0*cm), logicSource, "SourceBead", logicWorld, false, 0, true);
 
 
-    // 4. CCD cover lid
-    // A 2.5mm thick aluminum sheet covering the CCD
+    // 4. CCD shielding made of Mylar foil
+    // a) First cover CCD in 10 micron thick mylar sheet
+    G4double MylarBox_x = 150 * mm;
+    G4double MylarBox_y = 150 * mm;
+    G4double MylarBox_z = 0.01 * mm;
+
+
+    G4Box* solidMylarBox = new G4Box("MylarBox", MylarBox_x/2, MylarBox_y/2, MylarBox_z/2);
+    G4LogicalVolume* logicMylarBox = new G4LogicalVolume(solidMylarBox, mat_Mylar, "MylarBox");
+    new G4PVPlacement(0, G4ThreeVector(0,0,-1.0*cm), logicMylarBox, "MylarBox", logicWorld, false, 0, true);
+
+    // b) Cover mylar in 5 micron thick aluminum to make mylar foil
     G4double AlBox_x = 150 * mm;
     G4double AlBox_y = 150 * mm;
-    G4double AlBox_z = 2.5 * mm;
+    G4double AlBox_z = 0.005 * mm;
 
     G4Box* solidAlBox = new G4Box("AlBox", AlBox_x/2, AlBox_y/2, AlBox_z/2);
     G4LogicalVolume* logicAlBox = new G4LogicalVolume(solidAlBox, mat_Al, "AlBox");

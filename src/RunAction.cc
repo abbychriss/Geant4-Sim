@@ -12,24 +12,29 @@ RunAction::RunAction()
   analysisManager->SetDefaultFileType("csv"); 
 
   // 2. Set the default file name
-  // This will result in a file named "Am241_Data.csv"
-  analysisManager->SetFileName("Am241_Data");
+  // This will result in a file named "Fe55_Data.csv"
+  analysisManager->SetFileName("Fe55_Data");
 
-
-
+  // Ntuple 0: data from detector hits
   analysisManager->CreateNtuple("Hits", "Pixel Hits");
-
   analysisManager->CreateNtupleIColumn("EventID"); // Vital for reconstruction!
   analysisManager->CreateNtupleIColumn("PixelX");
   analysisManager->CreateNtupleIColumn("PixelY");
   analysisManager->CreateNtupleDColumn("Edep_keV");
   analysisManager->CreateNtupleDColumn("ElectronHolePairs");
-
-  analysisManager->FinishNtuple();
+  analysisManager->FinishNtuple(0);
   
   // Optional: Console logging to confirm setup
   G4cout << "RunAction::RunAction: Ntuple 'Hits' created." << G4endl;
 
+  // 3. Second ntuple to record the energies of secondary particles generated in decays of source
+  // Create ntuple 1: secondary energies
+  analysisManager->CreateNtuple("Secondaries", "Secondary Particles");
+  analysisManager->CreateNtupleDColumn("EventID"); // Column 0: Event ID
+  analysisManager->CreateNtupleDColumn("Ekin"); // Column 1: Kinetic Energy
+  analysisManager->FinishNtuple(1);
+
+  G4cout << "RunAction::RunAction: Ntuple 'Secondaries' created." << G4endl;
 
 } // <--- This was likely missing!
 
@@ -53,3 +58,4 @@ void RunAction::EndOfRunAction(const G4Run* /*run*/)
   analysisManager->Write();
   analysisManager->CloseFile();
 }
+
