@@ -1,6 +1,6 @@
 CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.o: \
-  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/DetectorConstruction.cc \
-  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/include/DetectorConstruction.hh \
+  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/DetectorConstruction.cc \
+  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/include/DetectorConstruction.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4VUserDetectorConstruction.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/globals.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4ios.hh \
@@ -974,7 +974,7 @@ CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
-  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/include/CCDSensitiveDetector.hh \
+  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/include/CCDSensitiveDetector.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4VSensitiveDetector.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4CollectionNameVector.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4HCofThisEvent.hh \
@@ -1155,6 +1155,11 @@ CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.o: \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4Box.icc \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4Sphere.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4Sphere.icc \
+  /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4SubtractionSolid.hh \
+  /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4BooleanSolid.hh \
+  /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4DisplacedSolid.hh \
+  /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4VBooleanProcessor.hh \
+  /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4BooleanSolid.icc \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4PVPlacement.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4NistManager.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4ICRU90StoppingData.hh \

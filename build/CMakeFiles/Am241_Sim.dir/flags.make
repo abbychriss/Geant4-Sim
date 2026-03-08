@@ -4,9 +4,9 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DG4LIB_BUILD_DLL -DG4UI_USE_QT -DG4VIS_USE_OPENGLQT -DG4VIS_USE_QT3D -DG4VIS_USE_TOOLSSG_QT_GLES -DG4VIS_USE_TOOLSSG_QT_ZB -DPTL_BUILD_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DTOOLS_USE_HDF5
 
-CXX_INCLUDES = -I/Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/include -isystem /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4 -isystem /Users/abbychriss/miniconda3/envs/geant4-env/include -isystem /Users/abbychriss/miniconda3/envs/geant4-env/include/qt -isystem /Users/abbychriss/miniconda3/envs/geant4-env/include/qt/QtCore -isystem /Users/abbychriss/miniconda3/envs/geant4-env/./mkspecs/macx-clang -isystem /Users/abbychriss/miniconda3/envs/geant4-env/include/qt/QtGui -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers -isystem /Users/abbychriss/miniconda3/envs/geant4-env/include/qt/QtWidgets -isystem /Users/abbychriss/miniconda3/envs/geant4-env/include/freetype2
+CXX_INCLUDES = -I/Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/include -isystem /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4 -isystem /Users/abbychriss/miniconda3/envs/geant4-env/include -isystem /Users/abbychriss/miniconda3/envs/geant4-env/include/qt -isystem /Users/abbychriss/miniconda3/envs/geant4-env/include/qt/QtCore -isystem /Users/abbychriss/miniconda3/envs/geant4-env/./mkspecs/macx-clang -isystem /Users/abbychriss/miniconda3/envs/geant4-env/include/qt/QtGui -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers -isystem /Users/abbychriss/miniconda3/envs/geant4-env/include/qt/QtWidgets -isystem /Users/abbychriss/miniconda3/envs/geant4-env/include/freetype2
 
-CXX_FLAGSx86_64 = -std=gnu++17 -arch x86_64 -fPIC
+CXX_FLAGSx86_64 = -std=gnu++17 -arch x86_64 -mmacosx-version-min=14.6 -fPIC
 
-CXX_FLAGS = -std=gnu++17 -arch x86_64 -fPIC
+CXX_FLAGS = -std=gnu++17 -arch x86_64 -mmacosx-version-min=14.6 -fPIC
 

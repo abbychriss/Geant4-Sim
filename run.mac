@@ -14,7 +14,7 @@
 # --- Position ---
 # Inside bead for Am-241, open at position for Fe-55
 /gps/pos/type Point
-/gps/pos/centre 0. 0. -5.0 cm
+/gps/pos/centre 0. 0. -2.0 cm
 
 # --- Angular Distribution ---
 # Pure isotropic emission (standard for a check source)
@@ -22,4 +22,4 @@
 
 # --- Run ---
 /run/printProgress 10000
-/run/beamOn 1000000
+/run/beamOn 4000000 #1000000 

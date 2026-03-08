@@ -1,6 +1,6 @@
 CMakeFiles/Am241_Sim.dir/src/RunAction.cc.o: \
-  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/RunAction.cc \
-  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/include/RunAction.hh \
+  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/RunAction.cc \
+  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/include/RunAction.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4UserRunAction.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4Types.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4GlobalConfig.hh \

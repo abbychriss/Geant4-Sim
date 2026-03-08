@@ -4,6 +4,7 @@
 #include "G4SystemOfUnits.hh"
 #include "G4Step.hh"
 #include "Randomize.hh"
+#include "G4Gamma.hh"
 
 // Constants for your CCD
 const G4double PIXEL_SIZE = 15.0 * um;
@@ -38,7 +39,6 @@ G4bool CCDSensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory*)
   // Standard check for zero energy steps
   if (edep <= 0.0) return false;
     
-    
   // 1. Get Local Coordinates
   // We transform the global position of the hit into the coordinate system 
   // of the CCD volume (where 0,0 is the center).
@@ -64,8 +64,15 @@ G4bool CCDSensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory*)
   // 3. Create Unique Pixel ID (Flattened Index)
   G4int pixelID = iy * N_PIX_X + ix;
 
-  // 4. Accumulate Energy
-  fHitMap[pixelID] += edep;
+  // 4. Get particle definition of track and store in hitmap
+  G4String particleName = track->GetDefinition()->GetParticleName();
+
+  // If pixel already exists, accumulate energy
+  if (fHitMap.find(pixelID) != fHitMap.end()) {
+    fHitMap[pixelID].first += edep;
+    } else {
+    fHitMap[pixelID] = std::make_pair(edep, particleName);
+  }
 
   return true;
 }
@@ -83,7 +90,9 @@ void CCDSensitiveDetector::EndOfEvent(G4HCofThisEvent*)
   const G4double Fano = 0.115;
 
   // Loop over every pixel that saw energy this event
-  for (auto const& [pixelID, energy] : fHitMap) {
+  for (auto const& [pixelID, hitData] : fHitMap){
+      G4double energy = hitData.first;
+      G4String particleName = hitData.second;
       
       // Calculate Charge for THIS pixel
       G4double mean_N = energy / epsilon;
@@ -109,6 +118,9 @@ void CCDSensitiveDetector::EndOfEvent(G4HCofThisEvent*)
       
       // Col 4: Charge (e-)
       analysisManager->FillNtupleDColumn(0, 4, measured_N);
+
+      // Col 5: Particle name (unfortumatley only accounts for particle that hit, but should be fine)
+      analysisManager->FillNtupleSColumn(0, 5, particleName);
 
       analysisManager->AddNtupleRow(0);
   }

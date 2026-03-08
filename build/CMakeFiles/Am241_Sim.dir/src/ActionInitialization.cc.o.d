@@ -1,8 +1,8 @@
 CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.o: \
-  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/ActionInitialization.cc \
-  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/include/ActionInitialization.hh \
+  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/ActionInitialization.cc \
+  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/include/ActionInitialization.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4VUserActionInitialization.hh \
-  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/include/RunAction.hh \
+  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/include/RunAction.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4UserRunAction.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4Types.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4GlobalConfig.hh \
@@ -976,7 +976,7 @@ CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
-  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/include/SteppingAction.hh \
+  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/include/SteppingAction.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4UserSteppingAction.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4GeneralParticleSource.hh \

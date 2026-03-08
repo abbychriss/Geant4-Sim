@@ -17,7 +17,8 @@ int main(int argc, char** argv)
 {
     // 1. Construct the Run Manager
     // Serial is easier for debugging, Multithreaded is faster for stats.
-    auto* runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Serial);
+    auto* runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::MT);
+    runManager->SetNumberOfThreads(32);   // optional set number of threads
 
     // 2. Set Mandatory Initialization Classes
     

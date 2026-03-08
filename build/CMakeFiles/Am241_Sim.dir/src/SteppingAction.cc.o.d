@@ -1,6 +1,6 @@
 CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.o: \
-  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/SteppingAction.cc \
-  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/include/SteppingAction.hh \
+  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/SteppingAction.cc \
+  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/include/SteppingAction.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4UserSteppingAction.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4AnalysisManager.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4GenericAnalysisManager.hh \
@@ -1333,4 +1333,5 @@ CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.o: \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4RunManagerKernel.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/rundefs.hh \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/list \
-  /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4SystemOfUnits.hh
+  /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4SystemOfUnits.hh \
+  /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4Gamma.hh

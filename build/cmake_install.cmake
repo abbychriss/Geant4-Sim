@@ -1,4 +1,4 @@
-# Install script for directory: /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim
+# Install script for directory: /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build/Am241_Sim")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build/Am241_Sim")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Am241_Sim" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Am241_Sim")
     execute_process(COMMAND /usr/bin/install_name_tool
@@ -51,13 +51,13 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build/CMakeFiles/Am241_Sim.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build/CMakeFiles/Am241_Sim.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build/install_local_manifest.txt"
+  file(WRITE "/Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -73,6 +73,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

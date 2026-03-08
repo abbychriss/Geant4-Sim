@@ -57,10 +57,10 @@ RM = /Users/abbychriss/miniconda3/envs/geant4-env/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim
+CMAKE_SOURCE_DIR = /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build
+CMAKE_BINARY_DIR = /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build/CMakeFiles /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build/CMakeFiles /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

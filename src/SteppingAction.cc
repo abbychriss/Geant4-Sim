@@ -4,6 +4,7 @@
 #include "G4Step.hh"
 #include "G4Track.hh"
 #include "G4SystemOfUnits.hh"
+#include "G4Gamma.hh"
 
 SteppingAction::SteppingAction() : G4UserSteppingAction()
 {}
@@ -31,20 +32,24 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
     // Get list of secondaries produced in this step
     const auto* secondaryTracks = step->GetSecondaryInCurrentStep();
 
-        if (!secondaryTracks) return;
-            for (const auto& track : *secondaryTracks) {
+        if (secondaryTracks->empty()) return;
+            for (const auto& secTrack : *secondaryTracks) {
                 // Get the particle definition (optional: filter by particle type)
                 // G4String name = track->GetDefinition()->GetParticleName();
                 
                 // Get Kinetic Energy
-                G4double eKin = track->GetKineticEnergy();
+                G4double eKin = secTrack->GetKineticEnergy();
                 
                 // Get event ID
                 G4int eventID = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
+
+                // Get particle name
+                G4String particleName = track->GetDefinition()->GetParticleName();
                 
                 // Fill ntuple
-                analysisManager->FillNtupleDColumn(1, 0, eventID); // Ntuple 1, Column 0
-                analysisManager->FillNtupleDColumn(1, 1, eKin / keV); // Ntuple 1, Column 0
+                analysisManager->FillNtupleIColumn(1, 0, eventID); // Ntuple 1, Column 0
+                analysisManager->FillNtupleDColumn(1, 1, eKin / keV); // Ntuple 1, Column 1
+                analysisManager->FillNtupleSColumn(1, 2, particleName); // Ntuple 1, Column 2
                 analysisManager->AddNtupleRow(1); // Save row
             }
 }

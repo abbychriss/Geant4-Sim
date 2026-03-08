@@ -1,6 +1,6 @@
 CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.o: \
-  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/CCDSensitiveDetector.cc \
-  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/include/CCDSensitiveDetector.hh \
+  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/CCDSensitiveDetector.cc \
+  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/include/CCDSensitiveDetector.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4VSensitiveDetector.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4CollectionNameVector.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/globals.hh \
@@ -1339,4 +1339,5 @@ CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.o: \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4RunManagerKernel.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/rundefs.hh \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/list \
-  /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4SystemOfUnits.hh
+  /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4SystemOfUnits.hh \
+  /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4Gamma.hh

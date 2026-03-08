@@ -19,8 +19,8 @@ class CCDSensitiveDetector : public G4VSensitiveDetector
 
   private:
     // Key: unique integer ID for the pixel (row*width + col)
-    // Value: accumulated energy in each pixel
-    std::map<G4int, G4double> fHitMap;
+    // Value: accumulated energy in each pixel and particle name
+    std::map<G4int, std::pair<G4double, G4String>> fHitMap;
 };
 
 #endif

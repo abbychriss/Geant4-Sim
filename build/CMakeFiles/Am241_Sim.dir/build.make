@@ -53,10 +53,10 @@ RM = /Users/abbychriss/miniconda3/envs/geant4-env/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim
+CMAKE_SOURCE_DIR = /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build
+CMAKE_BINARY_DIR = /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Am241_Sim.dir/depend.make
@@ -73,88 +73,88 @@ CMakeFiles/Am241_Sim.dir/codegen:
 .PHONY : CMakeFiles/Am241_Sim.dir/codegen
 
 CMakeFiles/Am241_Sim.dir/main.cc.o: CMakeFiles/Am241_Sim.dir/flags.make
-CMakeFiles/Am241_Sim.dir/main.cc.o: /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/main.cc
+CMakeFiles/Am241_Sim.dir/main.cc.o: /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/main.cc
 CMakeFiles/Am241_Sim.dir/main.cc.o: CMakeFiles/Am241_Sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Am241_Sim.dir/main.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Am241_Sim.dir/main.cc.o -MF CMakeFiles/Am241_Sim.dir/main.cc.o.d -o CMakeFiles/Am241_Sim.dir/main.cc.o -c /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Am241_Sim.dir/main.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Am241_Sim.dir/main.cc.o -MF CMakeFiles/Am241_Sim.dir/main.cc.o.d -o CMakeFiles/Am241_Sim.dir/main.cc.o -c /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/main.cc
 
 CMakeFiles/Am241_Sim.dir/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Am241_Sim.dir/main.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/main.cc > CMakeFiles/Am241_Sim.dir/main.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/main.cc > CMakeFiles/Am241_Sim.dir/main.cc.i
 
 CMakeFiles/Am241_Sim.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Am241_Sim.dir/main.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/main.cc -o CMakeFiles/Am241_Sim.dir/main.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/main.cc -o CMakeFiles/Am241_Sim.dir/main.cc.s
 
 CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.o: CMakeFiles/Am241_Sim.dir/flags.make
-CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.o: /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/ActionInitialization.cc
+CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.o: /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/ActionInitialization.cc
 CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.o: CMakeFiles/Am241_Sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.o -MF CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.o.d -o CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.o -c /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/ActionInitialization.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.o -MF CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.o.d -o CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.o -c /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/ActionInitialization.cc
 
 CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/ActionInitialization.cc > CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/ActionInitialization.cc > CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.i
 
 CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/ActionInitialization.cc -o CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/ActionInitialization.cc -o CMakeFiles/Am241_Sim.dir/src/ActionInitialization.cc.s
 
 CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.o: CMakeFiles/Am241_Sim.dir/flags.make
-CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.o: /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/CCDSensitiveDetector.cc
+CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.o: /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/CCDSensitiveDetector.cc
 CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.o: CMakeFiles/Am241_Sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.o -MF CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.o.d -o CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.o -c /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/CCDSensitiveDetector.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.o -MF CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.o.d -o CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.o -c /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/CCDSensitiveDetector.cc
 
 CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/CCDSensitiveDetector.cc > CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/CCDSensitiveDetector.cc > CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.i
 
 CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/CCDSensitiveDetector.cc -o CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/CCDSensitiveDetector.cc -o CMakeFiles/Am241_Sim.dir/src/CCDSensitiveDetector.cc.s
 
 CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.o: CMakeFiles/Am241_Sim.dir/flags.make
-CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.o: /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/DetectorConstruction.cc
+CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.o: /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/DetectorConstruction.cc
 CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.o: CMakeFiles/Am241_Sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.o -MF CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.o.d -o CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.o -c /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/DetectorConstruction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.o -MF CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.o.d -o CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.o -c /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/DetectorConstruction.cc
 
 CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/DetectorConstruction.cc > CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/DetectorConstruction.cc > CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.i
 
 CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/DetectorConstruction.cc -o CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/DetectorConstruction.cc -o CMakeFiles/Am241_Sim.dir/src/DetectorConstruction.cc.s
 
 CMakeFiles/Am241_Sim.dir/src/RunAction.cc.o: CMakeFiles/Am241_Sim.dir/flags.make
-CMakeFiles/Am241_Sim.dir/src/RunAction.cc.o: /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/RunAction.cc
+CMakeFiles/Am241_Sim.dir/src/RunAction.cc.o: /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/RunAction.cc
 CMakeFiles/Am241_Sim.dir/src/RunAction.cc.o: CMakeFiles/Am241_Sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Am241_Sim.dir/src/RunAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Am241_Sim.dir/src/RunAction.cc.o -MF CMakeFiles/Am241_Sim.dir/src/RunAction.cc.o.d -o CMakeFiles/Am241_Sim.dir/src/RunAction.cc.o -c /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/RunAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Am241_Sim.dir/src/RunAction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Am241_Sim.dir/src/RunAction.cc.o -MF CMakeFiles/Am241_Sim.dir/src/RunAction.cc.o.d -o CMakeFiles/Am241_Sim.dir/src/RunAction.cc.o -c /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/RunAction.cc
 
 CMakeFiles/Am241_Sim.dir/src/RunAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Am241_Sim.dir/src/RunAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/RunAction.cc > CMakeFiles/Am241_Sim.dir/src/RunAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/RunAction.cc > CMakeFiles/Am241_Sim.dir/src/RunAction.cc.i
 
 CMakeFiles/Am241_Sim.dir/src/RunAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Am241_Sim.dir/src/RunAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/RunAction.cc -o CMakeFiles/Am241_Sim.dir/src/RunAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/RunAction.cc -o CMakeFiles/Am241_Sim.dir/src/RunAction.cc.s
 
 CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.o: CMakeFiles/Am241_Sim.dir/flags.make
-CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.o: /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/SteppingAction.cc
+CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.o: /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/SteppingAction.cc
 CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.o: CMakeFiles/Am241_Sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.o -MF CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.o.d -o CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.o -c /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/SteppingAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.o -MF CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.o.d -o CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.o -c /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/SteppingAction.cc
 
 CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/SteppingAction.cc > CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/SteppingAction.cc > CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.i
 
 CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/src/SteppingAction.cc -o CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/src/SteppingAction.cc -o CMakeFiles/Am241_Sim.dir/src/SteppingAction.cc.s
 
 # Object files for target Am241_Sim
 Am241_Sim_OBJECTS = \
@@ -218,7 +218,7 @@ Am241_Sim: /Users/abbychriss/miniconda3/envs/geant4-env/lib/libG4global.dylib
 Am241_Sim: /Users/abbychriss/miniconda3/envs/geant4-env/lib/libG4ptl.3.0.0.dylib
 Am241_Sim: /Users/abbychriss/miniconda3/envs/geant4-env/lib/libCLHEP-2.4.7.1.dylib
 Am241_Sim: CMakeFiles/Am241_Sim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Am241_Sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Am241_Sim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Am241_Sim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -230,6 +230,6 @@ CMakeFiles/Am241_Sim.dir/clean:
 .PHONY : CMakeFiles/Am241_Sim.dir/clean
 
 CMakeFiles/Am241_Sim.dir/depend:
-	cd /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/build/CMakeFiles/Am241_Sim.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/build/CMakeFiles/Am241_Sim.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Am241_Sim.dir/depend
 

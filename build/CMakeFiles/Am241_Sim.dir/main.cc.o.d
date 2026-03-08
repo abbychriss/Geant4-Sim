@@ -1,5 +1,5 @@
 CMakeFiles/Am241_Sim.dir/main.cc.o: \
-  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/main.cc \
+  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/main.cc \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4RunManagerFactory.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4MTRunManager.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4MTBarrier.hh \
@@ -1425,9 +1425,9 @@ CMakeFiles/Am241_Sim.dir/main.cc.o: \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4UIbatch.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4UIExecutive.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4VUIshell.hh \
-  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/include/DetectorConstruction.hh \
+  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/include/DetectorConstruction.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4VUserDetectorConstruction.hh \
-  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/Am241_Sim/include/ActionInitialization.hh \
+  /Users/abbychriss/Desktop/Privitera_335/geant4_sims/geant4_sims_code/Am241_Sim/include/ActionInitialization.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4VUserActionInitialization.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4PhysListFactory.hh \
   /Users/abbychriss/miniconda3/envs/geant4-env/include/Geant4/G4VModularPhysicsList.hh \

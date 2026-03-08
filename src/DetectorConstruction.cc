@@ -4,6 +4,7 @@
 #include "G4Box.hh"
 #include "G4Sphere.hh"
 #include "G4LogicalVolume.hh"
+#include "G4SubtractionSolid.hh"
 #include "G4PVPlacement.hh"
 #include "G4NistManager.hh"
 #include "G4SystemOfUnits.hh"
@@ -52,25 +53,57 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     // new G4PVPlacement(0, G4ThreeVector(0, 0, -5.0*cm), logicSource, "SourceBead", logicWorld, false, 0, true);
 
 
-    // 4. CCD shielding made of Mylar foil
+    // 4. CCD shielding made of double aluminized mylar foil
+
+    // a) First cover CCD in 10 micron thick aluminum box
+
+    // Need to subtract off volume of CCD!!!
+    G4double AlTot1_x = 150 * mm;
+    G4double AlTot1_y = 150 * mm;
+    G4double AlTot1_z = 0.650+0.02 * mm;
+
+    G4double AlInt1_x = 90 * mm;
+    G4double AlInt1_y = 22.5 * mm;
+    G4double AlInt1_z = 0.650 * mm;
+
+    G4Box* solidAlTot1 = new G4Box("SolidAlTot1", AlTot1_x/2, AlTot1_y/2, AlTot1_z/2);
+    G4Box* solidAlInt1 = new G4Box("SolidAlInt1", AlInt1_x/2, AlInt1_y/2, AlInt1_z/2);
+    G4SubtractionSolid* AlSheet1 = new G4SubtractionSolid("AlSheet1", solidAlTot1, solidAlInt1);
+    G4LogicalVolume* logicAlSheet1 = new G4LogicalVolume(AlSheet1, mat_Al, "MylarSheet");
+    new G4PVPlacement(0, G4ThreeVector(0,0,-1.0*cm), logicAlSheet1, "AlSheet1", logicWorld, false, 0, true);
+
+
     // a) First cover CCD in 10 micron thick mylar sheet
-    G4double MylarBox_x = 150 * mm;
-    G4double MylarBox_y = 150 * mm;
-    G4double MylarBox_z = 0.01 * mm;
+    // Sheet is made by subtracting interior solid mylar box from larger solid mylar box
+    G4double MylarTot_x = 150.02 * mm;
+    G4double MylarTot_y = 150.02 * mm;
+    G4double MylarTot_z = 0.650+0.04 * mm;
 
+    G4double MylarInt_x = 150 * mm;
+    G4double MylarInt_y = 150 * mm;
+    G4double MylarInt_z = 0.650+0.02 * mm;
 
-    G4Box* solidMylarBox = new G4Box("MylarBox", MylarBox_x/2, MylarBox_y/2, MylarBox_z/2);
-    G4LogicalVolume* logicMylarBox = new G4LogicalVolume(solidMylarBox, mat_Mylar, "MylarBox");
-    new G4PVPlacement(0, G4ThreeVector(0,0,-1.0*cm), logicMylarBox, "MylarBox", logicWorld, false, 0, true);
+    G4Box* solidMylarTot = new G4Box("SolidMylarTot", MylarTot_x/2, MylarTot_y/2, MylarTot_z/2);
+    G4Box* solidMylarInt = new G4Box("SolidMylarInt", MylarInt_x/2, MylarInt_y/2, MylarInt_z/2);
+    G4SubtractionSolid* MylarSheet = new G4SubtractionSolid("MylarSheet", solidMylarTot, solidMylarInt);
+    G4LogicalVolume* logicMylarSheet = new G4LogicalVolume(MylarSheet, mat_Mylar, "MylarSheet");
+    new G4PVPlacement(0, G4ThreeVector(0,0,-1.0*cm), logicMylarSheet, "MylarSheet", logicWorld, false, 0, true);
 
-    // b) Cover mylar in 5 micron thick aluminum to make mylar foil
-    G4double AlBox_x = 150 * mm;
-    G4double AlBox_y = 150 * mm;
-    G4double AlBox_z = 0.005 * mm;
+    // b) Outer layer of aluminum to make double sided aluminized mylar foil
+    // Made by subtracting interior volume from total volume 
+    G4double AlTot2_x = 150.04 * mm;
+    G4double AlTot2_y = 150.04 * mm;
+    G4double AlTot2_z = 0.650+0.06 * mm;
 
-    G4Box* solidAlBox = new G4Box("AlBox", AlBox_x/2, AlBox_y/2, AlBox_z/2);
-    G4LogicalVolume* logicAlBox = new G4LogicalVolume(solidAlBox, mat_Al, "AlBox");
-    new G4PVPlacement(0, G4ThreeVector(0,0,-1.0*cm), logicAlBox, "AlBox", logicWorld, false, 0, true);
+    G4double AlInt2_x = 150.02 * mm;
+    G4double AlInt2_y = 150.02 * mm;
+    G4double AlInt2_z = 0.650+0.04 * mm;
+
+    G4Box* solidAlTot2 = new G4Box("SolidAlTot", AlTot2_x/2, AlTot2_y/2, AlTot2_z/2);
+    G4Box* solidAlInt2 = new G4Box("SolidAlInt", AlInt2_x/2, AlInt2_y/2, AlInt2_z/2);
+    G4SubtractionSolid* AlSheet2 = new G4SubtractionSolid("AlSheet2", solidAlTot2, solidAlInt2);
+    G4LogicalVolume* logicAlSheet2 = new G4LogicalVolume(AlSheet2, mat_Al, "AlSheet");
+    new G4PVPlacement(0, G4ThreeVector(0,0,-1.0*cm), logicAlSheet2, "AlSheet2", logicWorld, false, 0, true);
 
 
     // 6. CCD dead layer
