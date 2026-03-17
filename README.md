@@ -4,10 +4,10 @@ Tested against geant4-v11.3.2
 Parameters:
 * CCD is 6k x 1.5k, 15um x 15 um pixels, 650 um thick. Fano factor = 0.115, ionization energy = 3.74 eV
 * Deadlayer/PCC approximated by 2um of inactive Si
-* Current version (Fe55):
+* For Fe-55:
 *   30 micron double aluminized mylar foil surounding CCD
-*   
-* Previously (Am241):
+  
+* For Am241:
 *   Am241 source encapsulated in 1-mm plexiglass bead to block alphas
 *   Aluminum cover (2.5mm thick) is placed between source and CCD, 1 cm apart
 *   Tested 2.5mm mylar, copper
